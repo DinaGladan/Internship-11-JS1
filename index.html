@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <main class="calculator-page">
+        <section class="calculator">
+            <header class="calculator-top">
+                <div class="on-off">
+                    <button id="powerBtn" class="btn btn-power" type="button" aria-pressed="true">
+                        ON/OFF
+                    </button>
+                    <button id="shiftBtn" class="btn btn-shift" type="button" aria-pressed="false">
+                        Shift
+                    </button>
+                    <button id="historyBtn" class="btn btn-history" type="button" disabled>
+                        Povijest
+                    </button>
+                </div>
+
+                <div class="display">
+                    <div id="expressionEl" class="display-expr"></div>
+                    <div id="displayEl" class="display-value">0</div>
+                    <div id="messageEl" class="display-msg"></div>
+                </div>
+            </header>
+            <div class="calculator_keys">
+                <div id="keysEl" class="keys">
+                    <div class="history-head">
+                        <h3>Povijest</h3>
+                        <button id="clearHistoryBtn" class="btn btn-not-visible" type="bottun">Izbrisi povijest</button>
+                    </div>
+
+                    <div class="history-filters">
+                        <label class="field">
+                            <span>Filter mogucnosti:</span>
+                            <select id="optionFilter">
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                                <option value="*">*</option>
+                                <option value="/">/</option>
+                                <option value="^2">^2</option>
+                            </select>
+                        </label>
+
+                        <label class="field">
+                            <span>Filtiraj po</span>
+                            <input id="textInput" type="text">
+                        </label>
+                    </div>
+                    <div id="historyList" class="history_list"></div>
+                    <p id="historyEmpty" class="history_empty" hidden>
+                        Nema povijesti
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
