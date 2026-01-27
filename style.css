@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.calculator-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white
+}
+
+.calculator {
+    width: 400px;
+    background: grey;
+    border-radius: 15px;
+    padding: 16px;
+}
+
+.calculator-top {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.on-off {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-power {
+    background: green;
+    color: white;
+}
+
+.btn-shift {
+    background: blue;
+    color: white;
+}
+
+.btn-history {
+    background: rgb(86, 85, 85);
+    color: white;
+}
+
+.display {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: right;
+}
+
+.display-expr {
+    font-size: 15px;
+    color: white;
+    min-height: 15px;
+}
+
+.display-value {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.display-msg {
+    font-size: 15px;
+    color: #facc15;
+    min-height: 10px;
+}
+
+.calculator_keys {
+    margin-top: 15px;
+}
+
+.keys {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.history-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-not-visible {
+    font-size: 15px;
+    padding: 6px 8px;
+    background: red;
+    color: white;
+}
+
+.history-filters {
+    display: flex;
+    gap: 8px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.field span {
+    font-size: 15px;
+    color: black;
+}
+
+.field input,
+.field select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #d1d5db;
+}
+
+.history_list {
+    min-height: 80px;
+    border: 1px dashed white;
+    padding: 8px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.history_empty {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
